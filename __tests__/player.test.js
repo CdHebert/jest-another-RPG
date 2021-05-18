@@ -1,5 +1,6 @@
 
 const Player = require('../lib/Player');
+const Potion = require('../lib/potion');
 
 
 test('creates a player object', () => {
@@ -89,7 +90,7 @@ test('creates a player object', () => {
     expect(player.inventory.length).toBeLessThan(oldCount);
   });
 
-  const Potion = require('../lib/__mocks__/potion');
+  
 
   jest.mock('../lib/potion');
  
